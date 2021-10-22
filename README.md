@@ -59,7 +59,7 @@ The following is an example commandline that uses `numactl` and the `jemalloc` a
 numactl --interleave=all env LD_PRELOAD=path/to/libjemalloc.so MALLOC_CONF=thp:always ./benchmark insert rand-8
 ```
 
-Note that `jemalloc` relies on the Transparent Huge Pages (THP) mechanism in Linux to allocate huge pages, and THP silently falls back to regular pages if no huge pages are available. Check that the counter `thp_fault_fallback` in `/proc/vmstat` is not incremented when running the benchmark to rule out this possibility.
+**Note**: `jemalloc` relies on the Transparent Huge Pages (THP) mechanism in Linux to allocate huge pages, and THP silently falls back to regular pages if no huge pages are available. Check that the counter `thp_fault_fallback` in `/proc/vmstat` is not incremented when running the benchmark to rule out this possibility.
 
 ### Usage
 
