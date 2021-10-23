@@ -1,6 +1,8 @@
 # The Cuckoo Trie
 
-This repository contains the implementation of the Cuckoo Trie index used in Cuckoo Trie: Exploiting Memory-Level Parallelism for Efficient DRAM Indexing.
+The Cuckoo Trie is an efficient in-memory ordered index. It achieves high performance by utilising memory-level parallelism - the ability of modern processors to perfrom multiple memory accesses in parallel. This repository contains the implementation of the Cuckoo Trie index used in our paper.
+
+If you use the Cuckoo Trie, please cite our paper: **Cuckoo Trie: Exploiting Memory-Level Parallelism for Efficient DRAM Indexing.** Adar Zeitak, Adam Morrison. *Proceedings of the 28th ACM Symposium on Operating Systems Principles (SOSP '21)*.
 
 The code for the other indexes the Cuckoo Trie was benchmarked against can be found [here](https://github.com/cuckoo-trie/other-benchmarked-indexes).
 
